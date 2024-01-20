@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_forms">
+        <div class='top'>
+          <h5 class="title">SIGN IN</h5>
+        </div>
+        <div class="img_container">
+          <img src="./logo_hcdc.png" class="logo" alt="Logo"></img>
+        </div>
+        <div class='forms'>
+          <div class="input_container">
+            <input id="email" class="input" required />
+            <label class="label">EMAIL ADDRESS</label>
+            <div class="underline"></div>
+          </div>
+          <div class="input_container">
+            <input id="password" class="input" required />
+            <label class="label">PASSWORD</label>
+            <div class="underline"></div>
+          </div>
+          <div class="button_container">
+            <button class="btn_login" onclick="handleLogin()">
+              LOG IN
+            </button>
+            <button class="btn_register" onclick="toRegister()">
+              REGISTER
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let password = "admin";
+      let user = "admin";
+
+      function handleLogin() {
+        let infoU = document.getElementById("email").value;
+        let infoE = document.getElementById("password").value;
+
+        let success = "success";
+
+        if (infoU === user && infoE === password) {
+          alert(success);
+        }
+      }
+
+      function toRegister() {
+        
+        console.log("Redirecting to registration...");
+      }
+    </script>
+  </body>
+</html>

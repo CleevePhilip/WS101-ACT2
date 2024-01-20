@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e8e8e8;
+}
+.container_forms {
+  background-color: #ffffff;
+  height: 85%;
+  width: 30%;
+  position: relative;
+}
+.top {
+  text-align: center;
+  background-color: brown;
+  color: #ffffff;
+  padding: 10px;
+}
+.img_container {
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  height: 9rem;
+}
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+.input_container {
+  width: 300px;
+  position: relative;
+}
+.button_container {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  outline: none;
+  font-size: 12px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccc;
+  transition: ease-in-out 0.3s;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.input:focus ~ .label,
+.input:placeholder-shown ~ .label {
+  top: -12px;
+  font-size: 12px;
+  color: rgb(61, 154, 191);
+}
+.btn_login {
+  width: 100%;
+  padding: 10px 0;
+  background-color: brown;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+}
+.btn_register {
+  width: 100%;
+  padding: 10px 0;
+  background-color: green;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+}
+.title {
+  font-size: 16px;
+}
